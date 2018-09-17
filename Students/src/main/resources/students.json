@@ -1,0 +1,36 @@
+[
+  {
+    "name": "2",
+    "students": [
+      {
+        "name": "Denis Kruglik",
+        "marks": [10, 9, 4, 5, 7]
+      },
+      {
+        "name": "Ivan Shinkevich",
+        "marks": [10, 9, 10, 9, 8]
+      },
+      {
+        "name": "Alexander Yachnik",
+        "marks": [8, 9, 9, 5, 7]
+      }
+    ]
+  },
+  {
+    "name": "9",
+    "students": [
+      {
+        "name": "Egor Gorbik",
+        "marks": [5, 7, 8, 5, 7]
+      },
+      {
+        "name": "Ivan Shaveko",
+        "marks": [7, 5, 6, 9, 8]
+      },
+      {
+        "name": "Vlad Ilyushitz",
+        "marks": [5, 5, 4, 6, 7]
+      }
+    ]
+  }
+]
