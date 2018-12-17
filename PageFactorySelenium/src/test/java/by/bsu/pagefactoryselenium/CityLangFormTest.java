@@ -11,7 +11,24 @@ public class CityLangFormTest {
 
     private final static String CITY_NAME = "Moscow";
 
-    private final static String RUSSIAN_LANGUAGE = "РУССКИЙ";
+    private final static String RUSSIAN_LANGUAGE = new String(
+        new byte[]{
+            (byte)0xd0,
+            (byte)0xa0,
+            (byte)0xd0,
+            (byte)0xa3,
+            (byte)0xd0,
+            (byte)0xa1,
+            (byte)0xd0,
+            (byte)0xa1,
+            (byte)0xd0,
+            (byte)0x9a,
+            (byte)0xd0,
+            (byte)0x98,
+            (byte)0xd0,
+            (byte)0x99
+        }
+    );
 
     private WebDriver driver;
 
