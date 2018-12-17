@@ -46,7 +46,7 @@ public class TicketBuyForm {
 
     public void selectArrivalCountry(String countryName) {
         Select dropdown = new Select(mdlArrArea1);
-        dropdown.selectByVisibleText(countryName);
+        dropdown.selectByValue(countryName);
     }
 
     public void toggleForm() {

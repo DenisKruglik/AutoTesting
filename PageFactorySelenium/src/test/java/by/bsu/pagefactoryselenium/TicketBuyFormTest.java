@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TicketBuyFormTest {
     private final static String URL = "http://www.ru.jal.co.jp/rul/en/?city=MOW";
 
-    private final static String ARRIVAL_COUNTRY = "Австралия";
+    private final static String ARRIVAL_COUNTRY = "AU_CM";
 
     private final static String EXPECTED_ARRIVAL_CITY = "SYD";
 
