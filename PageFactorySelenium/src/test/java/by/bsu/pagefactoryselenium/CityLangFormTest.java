@@ -6,29 +6,43 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.UnsupportedEncodingException;
+
 public class CityLangFormTest {
     private final static String URL = "https://www.jal.com/index.html";
 
     private final static String CITY_NAME = "Moscow";
 
-    private final static String RUSSIAN_LANGUAGE = new String(
-        new byte[]{
-            (byte)0xd0,
-            (byte)0xa0,
-            (byte)0xd0,
-            (byte)0xa3,
-            (byte)0xd0,
-            (byte)0xa1,
-            (byte)0xd0,
-            (byte)0xa1,
-            (byte)0xd0,
-            (byte)0x9a,
-            (byte)0xd0,
-            (byte)0x98,
-            (byte)0xd0,
-            (byte)0x99
+    private final static String RUSSIAN_LANGUAGE;
+
+    static {
+        String lang;
+        try {
+            lang = new String(
+                    new byte[]{
+                        (byte)0xd0,
+                        (byte)0xa0,
+                        (byte)0xd0,
+                        (byte)0xa3,
+                        (byte)0xd0,
+                        (byte)0xa1,
+                        (byte)0xd0,
+                        (byte)0xa1,
+                        (byte)0xd0,
+                        (byte)0x9a,
+                        (byte)0xd0,
+                        (byte)0x98,
+                        (byte)0xd0,
+                        (byte)0x99
+                    },
+                    "UTF-8"
+                );
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+            lang = "РУССКИЙ";
         }
-    );
+        RUSSIAN_LANGUAGE = lang;
+    }
 
     private WebDriver driver;
 
